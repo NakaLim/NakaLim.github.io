@@ -11,7 +11,6 @@ nav {
   padding: 0;
 }
 
-
 .top-nav {
   width: 100%;
   background: #111;
@@ -19,12 +18,12 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: Arial, sans-serif;
+  font-family: Poppins;
   box-sizing: border-box;
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 21px;
   font-weight: 800;
   color: white;
   letter-spacing: 1px;
@@ -47,6 +46,27 @@ nav {
   letter-spacing: 1px;
 }
 
+.nav-links:hover{
+  color: rgb(142, 53, 53);
+}
+
+.aboutmenav:hover{
+  background-color: rgb(38, 142, 149);
+  border-radius: 20px;
+  padding: 6px 10px;
+}
+
+.photographynav:hover{
+  background-color: rgb(38, 142, 149);
+  border-radius: 20px;
+  padding: 6px 10px;
+}
+
+.recipenav:hover{
+  background-color: #268e95;
+  border-radius: 20px;
+  padding: 6px 10px;
+}
 
 .divider {
   color: #cfcfcf;
@@ -64,14 +84,14 @@ nav {
 }
 
 .emailme:hover {
-  opacity: 0.85;
+  background-color: rgb(38, 142, 149);
 }
 
 body {
 font-family: 'Arial', sans-serif;
 line-height: 1.6;
 padding: ០px;
-background-color: #d9d2d2;
+background-color: #f0efe9;
 }
 
 .homepagecover {
@@ -88,18 +108,20 @@ hr{
   align-items: flex-start;      
   justify-content: flex-start;  
   padding: 20px;
-  background-color: rgb(232, 225, 212);     
+  background-color: #f3ece0;     
 }
 
 .aboutmepic {
   width: 400px;                 
   height: auto;              
   margin-right: 20px;           
-  margin-top: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 .about-text {
-  max-width: 60%;               
+  max-width: 60%;
+  margin-top: 40px;               
 }
 
 h1 {
@@ -114,7 +136,7 @@ h1 {
 h2 {
   font-size: 1.5rem;           
   font-weight: 700;
-  color: rgb(101, 9, 122);
+  color: #1e6c72;
   margin-bottom: 10px;
   margin-left: 100px;
   font-family: Poppins;
@@ -124,7 +146,7 @@ h2 {
   font-size: 1rem;             
   line-height: 1.6; 
   margin-left: 100px; 
-  margin-top: 30px;
+  margin-top: 43px;
   font-family: Poppins;
   word-spacing: 5px;
 }
@@ -153,8 +175,8 @@ hr{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 50px;
-  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .photo-title {
@@ -162,9 +184,18 @@ hr{
   margin-top: 20px;
 }
 
+.gallcaption{
+  margin-left: 30px;
+  font-family: Poppins;
+  font-size: 1.2rem;           
+  font-weight: 900;
+  color: #1e6c72;
+  margin-bottom: 70px;
+}
+
 .description{
   padding: 6px 16px;
-  margin-top: 50px;
+  margin-top: 60px;
   margin-right: 10px;
   background: rgb(33, 122, 200);
   color: #ffffff !important;
@@ -197,29 +228,18 @@ hr{
     grid-template-columns: repeat(2, 1fr); 
   }
 }
-/* .profile-img {
-width: 150px;
-height: auto;
-border-radius: 50%;
-}
 
-h1 {
-  font-size: 1.5rem;
-}
 
-p {
-  font-size: 1rem;
-}  
-
-.bio, .projects {
-margin-bottom: 20px;
-}
 a {
-color: #333;
+color: #77237e;
 text-decoration: none;
 }
 a:hover {
 text-decoration: underline;
+background-color: rgb(38, 142, 149);
+color: white;
+border-radius: 20px;
+padding: 6px 16px;
 }
 footer {
 text-align: center;
