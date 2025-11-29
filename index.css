@@ -23,7 +23,6 @@ nav {
   box-sizing: border-box;
 }
 
-/*LOGO*/
 .logo {
   font-size: 24px;
   font-weight: 800;
@@ -31,7 +30,6 @@ nav {
   letter-spacing: 1px;
 }
 
-/* --- MENU ITEMS --- */
 .nav-links {
   list-style: none;
   display: flex;
@@ -49,14 +47,13 @@ nav {
   letter-spacing: 1px;
 }
 
-/* --- DIVIDERS (✦) --- */
+
 .divider {
   color: #cfcfcf;
   font-size: 12px;
 }
 
-/* --- RESUME BUTTON --- */
-.resume-btn {
+.emailme {
   padding: 6px 16px;
   background: white;
   color: #111 !important;
@@ -66,7 +63,7 @@ nav {
   transition: 0.2s;
 }
 
-.resume-btn:hover {
+.emailme:hover {
   opacity: 0.85;
 }
 
@@ -87,27 +84,24 @@ hr{
 }
 
 .about-container {
-  display: flex;                /* Aligns image and text horizontally */
-  align-items: flex-start;      /* Aligns everything to the top */
-  justify-content: flex-start;  /* Keeps everything aligned to the left */
+  display: flex;                
+  align-items: flex-start;      
+  justify-content: flex-start;  
   padding: 20px;
   background-color: rgb(232, 225, 212);     
 }
 
-/* Image styling */
 .aboutmepic {
-  width: 400px;                 /* Image size */
-  height: auto;                 /* Maintain aspect ratio */
-  margin-right: 20px;           /* Space between the image and text */
+  width: 400px;                 
+  height: auto;              
+  margin-right: 20px;           
   margin-top: 20px;
 }
 
-/* Text container styling */
 .about-text {
-  max-width: 60%;               /* Optional: restricts text width */
+  max-width: 60%;               
 }
 
-/* Heading for "About Me" */
 h1 {
   margin-top: 20px;
   margin-left: 100px;
@@ -117,9 +111,8 @@ h1 {
   font-family: Poppins;
 }
 
-/* Name and title */
 h2 {
-  font-size: 1.5rem;            /* Size of the subtitle (name/title) */
+  font-size: 1.5rem;           
   font-weight: 700;
   color: rgb(101, 9, 122);
   margin-bottom: 10px;
@@ -127,9 +120,8 @@ h2 {
   font-family: Poppins;
 }
 
-/* Paragraph text */
 .about-text p {
-  font-size: 1rem;              /* Size of the paragraph text */
+  font-size: 1rem;             
   line-height: 1.6; 
   margin-left: 100px; 
   margin-top: 30px;
@@ -148,7 +140,6 @@ hr{
   border: 80px solid #1e1e1e; 
 }
 
-/* Big white card */
 .photo-card {
   background: #fdfaf5;
   padding: 30px 40px;
@@ -166,28 +157,44 @@ hr{
   margin-top: 20px;
 }
 
+.photo-title {
+  margin-left: 25px;
+  margin-top: 20px;
+}
 
-/* Grid for images */
+.description{
+  padding: 6px 16px;
+  margin-top: 50px;
+  margin-right: 10px;
+  background: rgb(33, 122, 200);
+  color: #ffffff !important;
+  border-radius: 20px;
+  font-weight: 500;
+  font-family: Poppins;
+}
+
 .photo-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 15px;
-  width: 100%;   /* Ensure grid spans full width */
-  box-sizing: border-box; /* Prevents overflow */
+  width: 100%;  
+  box-sizing: border-box;
+  margin-bottom: 40px;
 }
 
 .photo-grid img {
   width: 100%;
-  height: 200px;
+  height: auto;
   object-fit: cover;
   display: block;
   border-radius: 10px;
+  margin-bottom: 0px;
 }
 
 
 @media (max-width: 768px) {
   .photo-grid {
-    grid-template-columns: repeat(2, 1fr);  /* 2 columns on small screens */
+    grid-template-columns: repeat(2, 1fr); 
   }
 }
 /* .profile-img {
